@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  /* height: 100vh; */
+}
+footer {
+  margin-top: 100px;
+}
+.logo {
+  margin-left: 10px;
+  cursor: pointer;
+  width: 200px;
+}
+nav {
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 0px 8% 0px 8%;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 10px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav ul li a:hover {
+  color: red;
+  cursor: pointer;
+}
+.quote {
+  text-align: center;
+  margin-top: 30px;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+}
+.category {
+  text-align: center;
+  margin-top: 30px;
+}
+.bookdisplay {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+}
+.bookinfo {
+  display: flex;
+  justify-content: left;
+  align-content: center;
+}
+.bookcolumn {
+  display: flex;
+  padding-left: 10%;
+  align-content: center;
+  flex-direction: column;
+}
+.thumbnail {
+  width: 100%;
+  height: 100%;
+}
+
+.subimagecolumn {
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+  padding: 10% 0 10% 3%;
+}
+.subimage {
+  height: 15%;
+  width: 15%;
+  padding-top: 10%;
+}
+
+.bookthumbnail {
+  width: 200px;
+  height: 300px;
+  max-width: 300px;
+  max-height: 500px;
+  padding: 10px 10px 0 10px;
+}
+.bookedition {
+  font-style: italic;
+  font-size: small;
+  font-weight: lighter;
+}
+#bookprice {
+  color: rgb(201, 33, 39);
+  font-size: 3vw;
+}
+.column1 {
+  display: flex;
+  justify-content: center;
+}
+.column2 {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  padding-top: 10%;
+}
+
+.buy {
+  height: 200%;
+  width: 50%;
+  border-radius: 5%;
+  align-content: center;
+  background-color: rgb(201, 33, 39);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-width: 3px;
+  transition: opacity 0.15s;
+}
+.buy:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+#bookname {
+  font-size: 3vw;
+  text-align: center;
+}
+
+.description {
+  width: 30%;
+  height: 70%;
+  padding-left: 10%;
+}
+.strong {
+  text-decoration: underline;
+  color: palevioletred;
+  font-weight: bolder;
+}
+#contact {
+  margin-left: 10%;
+  color: palevioletred;
+}
+#contact:hover {
+  color: cadetblue;
+}
+form {
+  margin-left: 10%;
+}
+.label {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a :hover {
+  color: powderblue;
+}
+.summary {
+  margin-top: 3%;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 700px) {
+  .bookthumbnail {
+    width: 46%;
+    height: 64%;
+  }
+  .thumbnail {
+    width: 100%;
+  }
+  .bookinfo {
+    display: block;
+    margin-left: -10px;
+    margin-right: 40px;
+  }
+  .column1 {
+    display: block;
+  }
+  .subimagecolumn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10% 0 25%;
+  }
+  .subimage {
+    height: 100%;
+    width: 50%;
+  }
+  .column2 {
+    display: flex;
+    padding-top: 5%;
+  }
+  .description {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  #bookname {
+    padding-top: 3%;
+    float: left;
+    padding-right: 3%;
+    color: purple;
+    font-style: italic;
+  }
+}
