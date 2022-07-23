@@ -10,105 +10,103 @@
 <body background="./images/background.jpg">
     <header class="top">
         <nav>
-            <a href="index.html"> <img
-            src="./images/logo-removebg.png"
-            alt="website's logo"
-            class="logo"
-          /></a>
-          <ul class="navbar">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="category-page.html">ADVENTURE</a></li>
-            <li><a href="category-page.html">SOCIAL BEHAVIORS</a></li>
-            <li><a href="category-page.html">EARTH & SPACE SCIENCES</a></li>
-          </ul>
+            <a href="index.html"> <img src="./images/logo-removebg.png" alt="website's logo" class="logo" /></a>
+            <ul class="navbar">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="category-page.html">ADVENTURE</a></li>
+                <li><a href="category-page.html">SOCIAL BEHAVIORS</a></li>
+                <li><a href="category-page.html">EARTH & SPACE SCIENCES</a></li>
+            </ul>
         </nav>
-    <main> 
+    </header>
+    <main id="contact-section" class="flex-column">
         <h1 id="contact">Contact Us </h1>
-        <form
-        method="post"
-        action="">
-        <div class="row">
-            <div class="label">
-                <label class="label_" for="purpose">Contact purpose:</label>
-                <select required id="purpose" name="purpose">
-                    <option value="bookselling">I want to sell books</option>
-                    <option value="bookbuying">I want to buy books</option>
-                </select>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="label">
-                <label for="fname">Full name:</label>
-                <input required type="text" id="fname" name="fname" maxlength="50" title="Enter your name"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="label">
-                <label for="mail">Email:</label>
-                <input required type="email" id="mail" name="mail" title="Enter email"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="label">
-                <label for="phone">Phone number:</label>
-                <input required type="tel" id="phone" name="phone" pattern="[0-9]{9,13}" title="Enter phone number(At least 10 digits)"/>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="label">
-                <label>How can we contact you:</label>
-            </div>
-            <div class="field">
-                <input  type="checkbox" id="phone_option" name="contact_option" value="phone" />
-                <label  for="phone_option">By phone</label>
-            </div>
-            <div class="field">
-                <input  type="checkbox" id="mail_option" name="contact_option" value="mail" />
-                <label for="mail_option">By email</label>
-            </div>
-        </div>
-
-        
-        <div class="row">
-            <div class="label">
-                <label>Do you want to receive our weekly newsletter:</label>
-                <input  type="radio" id="yes_option" name="daily_news" value="yes" checked="checked" />
-                <label for="yes_option">Yes</label>
-                <input  type="radio" id="no_option" name="daily_news" value="no" />
-                <label for="no_option">No</label>
-            </div>
-            
-        <div class="row">
-            <div class="label">
-                <label for="message">Others:</label>
-            </div>
-            <div class="field">
-                <textarea 
-                id="message" name="message" rows="9" cols="70">
-                </textarea>
-            </div>
-        </div>
+        <form method="post" action="POST">
             <div class="row">
-            <input type="submit" value="Submit" id="submit"/>
-            <input type="reset" value="Reset" id="reset" />
+                <div class="label">
+                    <label class="label" for="purpose">Contact purpose:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="bookselling">I want to sell books</option>
+                        <option value="bookbuying">I want to buy books</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="fname">Full name:</label>
+                    <input required type="text" id="fname" name="fname" maxlength="50" title="Enter your name" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="mail">Email:</label>
+                    <input required type="email" id="mail" name="mail" title="Enter email" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label for="phone">Phone number:</label>
+                    <input required type="tel" id="phone" name="phone" pattern="[0-9]{9,13}"
+                        title="Enter phone number(At least 10 digits)" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="label">
+                    <label>How can we contact you:</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="phone_option" name="contact_option" value="phone" />
+                    <label for="phone_option">By phone</label>
+                </div>
+                <div class="field">
+                    <input type="checkbox" id="mail_option" name="contact_option" value="mail" />
+                    <label for="mail_option">By email</label>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="label">
+                    <label>Do you want to receive our weekly newsletter:</label>
+                    <div class="field">
+                        <input type="radio" id="yes_option" name="daily_news" value="yes" checked="checked" />
+                        <label for="yes_option">Yes</label>
+                    </div>
+                    <div class="field">
+                        <input type="radio" id="no_option" name="daily_news" value="no" />
+                        <label for="no_option">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="message">Others:</label>
+                </div>
+                <div class="field">
+                    <textarea id="message" name="message" rows="9" cols="50">
+                </textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" id="submit" />
+                <input type="reset" value="Reset" id="reset" />
             </div>
         </form>
-
-    </main>    
+    </main>
     <footer>
         <nav class="footer-nav">
             <ul class="navbar">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Copyright</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-    </footer>   
+    </footer>
 </body>
 </html>
